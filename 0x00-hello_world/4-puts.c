@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
- *main - this is the main function
- *return - should always return 0
+ * main - this is a main function
+ * Return: should always be 0
  */
 int main(void)
 {
