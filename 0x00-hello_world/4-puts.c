@@ -1,8 +1,6 @@
-#!/bin/bash
 #include<stdio.h>
 /**
- * main-this is the main function
- * 
+ * main-this is the main function 
  * return-should always return 0
  */
 int main(void)
