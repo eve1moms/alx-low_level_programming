@@ -1,11 +1,11 @@
 #include<stdio.h>
 /**
- * main-this is the main function 
- * return-should always return 0
+ *main-this is the main function
+ *return-should always return 0
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle \n");
+	puts("\"Programming is like building a multilingual puzzle");
 
 	return (0);
 }
