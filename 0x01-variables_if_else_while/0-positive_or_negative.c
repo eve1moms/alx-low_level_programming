@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include<stdio.h>
-/*
- * main- this is the main function
- * Return: should return 0
+/**
+ * main - This is the main function
+ * Description: cheks is a numebr is 0,negative or positive
+ * Return: shoul return 0
  */
 int main(void)
 {
