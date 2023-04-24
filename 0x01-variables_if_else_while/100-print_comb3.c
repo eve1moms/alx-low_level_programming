@@ -8,11 +8,11 @@ int main(void)
 	int n;
 	int N;
 
-	for (n =48; n <= 56; n++)
+	for (n = 48; n <= 56; n++)
 	{
 		for (N = 49;  N <= 57; N++)
 		{
-			if (N > n)
+			if (n < N)
 			{
 				putchar(n);
 				putchar(N);
