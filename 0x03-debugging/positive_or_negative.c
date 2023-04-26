@@ -1,4 +1,7 @@
 #include "main.h"
+/**
+* positive_or_negative - checks for positive or negative
+*/
 
 void positive_or_negative(int i)
 {
