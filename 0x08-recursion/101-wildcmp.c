@@ -3,7 +3,7 @@
 * wildcmp - compares 2 strings
 * @s1: the 1st strg
 * @s2: the 2nd strg
-* Return 1 if identicalelse 0
+* Return: 1 if identicalelse 0
 */
 int wildcmp(char *s1, char *s2)
 {
