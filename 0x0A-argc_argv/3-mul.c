@@ -3,14 +3,14 @@
 /**
 * _atoi - program that multiplies two numbers.
 * @s: the string
-* Return: 0
+* Return: the converted int
 */
 int _atoi(char *s)
 {
 	int m = 0, n = 0, o = 0, len = 0, p = 0, digit = 0;
 
 	while (s[len] != '\0')
-	len++;
+		len++;
 
 	while (m < len && p == 0)
 	{
@@ -31,7 +31,7 @@ int _atoi(char *s)
 	}
 	if (p == 0)
 		return (0);
-	return (n);
+	return (o);
 }
 /**
 * main - multiplies two numbers
@@ -39,7 +39,7 @@ int _atoi(char *s)
 * @argc: number of arrays
 * Return: 1 error 0 success
 */
-int main(int argc, int *argv[])
+int main(int argc, char  *argv[])
 {
 	int outcome, n1, n2;
 
