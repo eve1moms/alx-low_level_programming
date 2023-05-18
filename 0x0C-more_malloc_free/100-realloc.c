@@ -25,16 +25,16 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	ptr1 = malloc(new_size);
 	if (!ptr1)
 		return (NULL);
-	old_size = ptr;
+	old_ptr = ptr;
 	if (new_size < old_size)
 	{
 		for (p = 0; p < new_size; p++)
-			ptr[p] = old_ptr[p];
+			ptr1[p] = old_ptr[p];
 	}
 	if (new_size > old_size)
 	{
 		for (p = 0; p < old_size; p++)
-			ptr[p] = (old_size[p]);
+			ptr1[p] = (old_ptr[p]);
 	}
 	free(ptr);
 	return (ptr1);
