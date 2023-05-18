@@ -1,1 +1,1 @@
-more pointers and arrays
+ learning c
