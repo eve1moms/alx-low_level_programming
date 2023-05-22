@@ -16,10 +16,10 @@ int _strlen(char *s)
 	return (p);
 }
 /**
-* *_strcpy - copies the string pointed by src
+* *_strcpy - cpoies the string pointed to by src
 * @dest: pointer to buffer in which we copy the string
 * @src: source string to be copied
-* Return pointer to dest
+* Return: pointer to dest
 */
 char *_strcpy(char *dest, char *src)
 {
