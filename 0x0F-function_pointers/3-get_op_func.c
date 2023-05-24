@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include "3-calc.h"
 /**
-* get_op_func_ - gets the correct function
+* get_op_func - gets the correct function
 * @s: opperstor passed as argument
 * Return:  pointer to the function that corresponds
 * to the operator given as a parameter
