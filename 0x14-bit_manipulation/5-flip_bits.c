@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * flip_bits - hat calculates the number of bits that need
- * to be changed in one number to make it equal to another number
- * @n: first number
- * @m: second number
- * Return: number of bits to change
+ * flip_bits - That calculates Num of Bits that needs
+ * to be changed in one Num 2 make it equal 2 another Num
+ * @n: first Num
+ * @m: second Num
+ * Return: Num of Bits to change
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
