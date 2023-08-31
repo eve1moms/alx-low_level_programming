@@ -6,15 +6,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int p;
+	int k;
 	unsigned int decimal_value = 0;
 
 	if (!b)
 		return (0);
 
-	for (p = 0; b[p]; p++)
+	for (k = 0; b[k]; k++)
 	{
-		if (b[p] < '0' || b[p] > '1')
+		if (b[k] < '0' || b[k] > '1')
 			return (0);
 		decimal_value = 2 * decimal_value + (b[p] - '0');
 	}
