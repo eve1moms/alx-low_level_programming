@@ -5,12 +5,12 @@
  */
 void print_binary(unsigned long int n)
 {
-	int p, count = 0;
+	int k, count = 0;
 	unsigned long int result;
 
-	for (p = 63; p >= 0; p--)
+	for (k = 63; k >= 0; k--)
 	{
-		result = n >> p;
+		result = n >> k;
 
 		if (result & 1)
 		{

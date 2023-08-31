@@ -8,13 +8,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int p, count = 0;
+	int k, count = 0;
 	unsigned long int bit;
 	unsigned long int difference = n ^ m;
 
-	for (p = 63; p >= 0; p--)
+	for (k = 63; k >= 0; k--)
 	{
-		bit = difference >> p;
+		bit = difference >> k;
 		if (bit & 1)
 			count++;
 	}
