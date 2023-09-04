@@ -21,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 	w = write(fd, text_content, length);
 /*Opens File, give it Permission, If it Exists it Erases it */
 
-	if (fd == -1 || w == -1)/*if File Cant BE  OpenedORNothing Writen in it*/
+	if (fd == -1 || w == -1):
 	return (-1);
 	close(fd);/*Else*/
 	return (1);
