@@ -33,11 +33,11 @@ char *create_buffer(char *file)
  */
 void close_file(int fd)
 {
-	int c;
+	int k;
 
-	c = close(fd);
+	k = close(fd);
 
-	if (c == -1)
+	if (k == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
@@ -55,7 +55,7 @@ void close_file(int fd)
  */
 int main(int argc, char *argv[])
 {
-	int copy_from, paste_to, r, w;
+	int coppy_from, ppaste_to, r, w;
 	char *buffer;
 
 	if (argc != 3)
@@ -65,34 +65,34 @@ int main(int argc, char *argv[])
 	}
 
 	buffer = create_buffer(argv[2]);
-	copy_from = open(argv[1], O_RDONLY);
-	r = read(copy_from, buffer, 1024);
-	paste_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	coppy_from = open(argv[1], O_RDONLY);
+	r = read(coppy_from, buffer, 1024);
+	ppaste_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (copy_from == -1 || r == -1)
+		if (coppy_from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
-		w = write(paste_to, buffer, r);
-		if (paste_to == -1 || w == -1)
+		w = write(ppaste_to, buffer, r);
+		if (ppaste_to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
-		r = read(copy_from, buffer, 1024);
-		paste_to = open(argv[2], O_WRONLY | O_APPEND);
+		r = read(coppy_from, buffer, 1024);
+		ppaste_to = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);
 
 	free(buffer);
-	close_file(copy_from);
-	close_file(paste_to);
+	close_file(coppy_from);
+	close_file(ppaste_to);
 
 	return (0);
 }
